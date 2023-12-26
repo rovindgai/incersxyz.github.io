@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="webpage.css">
+    <title>Your Club</title>
+</head>
+<body>
+    <div class="header">
+        <div id="mainlogo">
+            <img src="incers.png" height="25px" alt="Club Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Help</a></li>
+            </ul>
+        </nav>
+        <div class="account">
+            <div class="dropdown">
+                <button class="dropbtn">Account <img src="dropdown.png" height="10px"></button>
+                
+                <div class="dropdown-content">
+                  <a href="#">Orders</a>
+                  <a href="#">Logout</a>
+                </div>
+              </div>
+            <div class="shopping-bag">
+                <img src="orders.png" height="20px" alt="Shopping Bag">
+                3 items
+            </div>
+            <div class="profile">
+                <img src="profile.jpg" height="30px" width="30px" alt="Profile Image">
+            </div>
+        </div>
+    </div>
+    <hr >
+    <div class="maincontent">
+    <div class="left-box">
+        <nav>
+            <ul>    
+            <li><button id="button1" class="active">Account</button></li> 
+            <li><button id="button2">Shipping</button></li> 
+            <li><button id="button3">Payment</button></li> 
+            </ul>
+        </nav>
+        <div class="account-details" style="display: none;">
+            <form>
+                <h1>Account Details</h1>
+                <label for="email">Email address</label>
+                <input type="text" id="email" name="email" required>
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+                <ul>
+                    <li><a href="#">Register for account</a></li>
+                    <li><button>Login</button></li>
+                </ul>
+            </form>
+        </div>
+        <br>
+        <br>
+        <hr>
+    </div>
+
+    <div class="right-box">
+        <p>Order Summary</p>
+        <img src="headphone.jpg" alt="Sony Headphones">
+        <p class="rahane">Sony Wireless Headphones</p>
+        <p class="rohit"> £320.45</p>
+        <input type="text" placeholder="">
+        <button class="apply-button">Apply</button>
+    </div>
+    </div>
+    <div class="footer">
+        <div class="contact-box">
+            <h1>CONTACT US</h1>
+            <p>WEBDEV&nbsp&nbsp+91XXXXXXXX<br>INCERS&nbsp&nbsp&nbsp&nbsp+91XXXXXXXX</p>
+        </div>
+        <div class="direction-box">
+            <h1>GET DIRECTION</h1>
+            <p>CERAMIC BUILDING<br>NATIONAL INSTITUTE OF TECHNOLOGY ROURKELA</p>
+        </div>
+        <div class="icons">
+           <a href="webpage.html"><img src="incers.png" width="60px" height="auto"></a>
+           <a href="https://www.nitrkl.ac.in/"><img src="nitrkl.png" width="40px"></a> <br><br>
+           <a href="#"><img src="fb.png" width="60px"></a>
+           <a href="#"><img src="instagram.png" width="35 px"></a>
+        </div>
+    </div>
+    
+    <script>
+        document.querySelector('.left-box button:nth-child(1)').addEventListener('click', function() {
+            document.querySelector('.account-details').style.display = 'block';
+        });
+        document.getElementById('button1').click();
+
+        document.getElementById('button1').addEventListener('click', function() {
+        setActiveButton('button1');
+        });
+
+        document.getElementById('button2').addEventListener('click', function() {
+        setActiveButton('button2');
+        });
+
+        document.getElementById('button3').addEventListener('click', function() {
+        setActiveButton('button3');
+        });
+
+        function setActiveButton(buttonId) {
+        document.getElementById('button1').classList.remove('active');
+        document.getElementById('button2').classList.remove('active');
+        document.getElementById('button3').classList.remove('active');
+
+        document.getElementById(buttonId).classList.add('active');
+        }
+    </script>
+</body>
+</html>

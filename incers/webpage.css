@@ -1,0 +1,336 @@
+body {
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    overflow: hidden;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+#mainlogo img {
+    margin-left: 30px;
+    margin-top: 35px;
+}
+
+
+.header nav ul {
+    list-style: none;  
+    display: flex;
+    margin-top: 40px;
+    margin-left: 200px;
+}
+
+nav ul li {
+    margin-left: 80px;
+    font-weight: bold;
+    font-size: small;
+}
+
+a:link{
+    color: #7d7d7a;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited{
+    color: #7d7d7a;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #7d7d7a;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:active{
+    color: #7d7d7a;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.account {
+    margin-left: 300px;
+    margin-top: 28px;
+    color: #7d7d7a;
+    font-weight: bold;
+    font-size: small;
+    display: flex;
+    align-items: center;
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropbtn {
+    background-color: transparent;
+    color: #7d7d7a;
+    padding: 12px;
+    font-size: small;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+}
+
+
+.account a {
+    margin-right: 20px;
+}
+
+.profile{
+    margin-left: 50px;
+}
+
+.profile img{
+    border-radius: 50%;
+}
+
+.shopping-bag {
+    position: relative;
+    color: black;
+    font-weight: lighter;
+    font-size: 14px;
+    margin-left: 50px;
+}
+
+.shopping-bag span {
+    position: absolute;
+    top: 10px;
+    right: -5px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 4px 8px;
+}
+
+hr {
+    border: 1px solid #ccc;
+    margin: 30px 0;
+}
+
+.maincontent{
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-box, .right-box {
+    border: none;
+    background-color: #eef1f3;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.left-box{
+    padding: 20px;
+    align-items: center;
+    width: 600px;
+    height: 431px;
+    margin-left: 50px;
+    .active {
+        color: blue;
+    }
+}
+
+.right-box{
+    width: 400px;
+    margin-right: 150px;
+    padding: 5px;
+    .rahane{
+        font-weight: 600;
+    }
+    .rohit{
+        font-weight: 800; 
+    }
+}
+
+.left-box nav ul{
+    justify-content: space-around;
+    list-style: none;  
+    display: flex;
+    margin-top: 10px;
+    padding-inline-start: 10px;
+}
+
+.left-box nav button {
+    margin-right: 10px;
+    color: #7d7d7a;
+    background-color: transparent;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+}
+
+form{
+    margin-left: 70px;
+}
+
+label{
+    color: #7d7d7a;
+    font-weight: bold;
+    font-size: small;
+    display: flex;
+    align-items: center;
+}
+
+form h1{
+    color:black;
+    font-weight: bold;
+    font-size: 16px;
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 25px;
+}
+
+form input{
+    background-color: #d9d9d9;
+    border: none;
+    border-radius: 5px;
+    width: 400px;
+    height: 35px;
+    margin-top: 10px;
+}
+
+form ul{
+    list-style: none;
+    display: flex;
+    margin-left: 100px;
+    margin-top: 30px;
+    vertical-align: top;
+}
+
+form ul a{
+    font-size: small;
+    font-weight: bold;
+    margin-right: 30px;
+    margin-top: 30px;
+}
+
+form ul a:link{
+    color: #0a0909;
+}
+
+form ul a:hover{
+    color: #0a0909;
+}
+
+form ul a:visited{
+    color: #0a0909;
+}
+
+form ul a:active{
+    color: #0a0909;
+}
+
+form ul button{
+    color: white;
+    background-color: rgb(17, 101, 228);
+    border: none;
+    border-radius: 5px;
+    width: 100px;
+    height: 35px;
+}
+
+.left-box hr{
+    margin: 20px;
+    border: 0.1px solid #c7c7c7    ;
+}
+
+.account-details {
+    margin-top: 20px;
+}
+
+.account-details input {
+    margin-bottom: 10px;
+}
+
+.options {
+    margin-top: 10px;
+}
+
+.right-box p{
+    font-weight: bold;
+}
+
+.right-box img {
+    width: 100px;
+    height: 250px;
+    width: auto;
+}
+
+.right-box input{
+    background-color: #d9d9d9;
+    border: none;
+    border-radius: 5px;
+    width: 250px;
+    height: 35px;
+    margin-top: 10px;
+}
+
+.apply-button {
+    margin-top: 10px;
+    color: rgb(17, 101, 228);
+    width: 100px;
+    height: 35px;
+    border-color: rgb(17, 101, 228);
+    border-radius: 5px;
+    margin-left: 15px;
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    height: 138px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    background-color:#d9d9d9 ;
+}
+
+.contact-box{
+    margin-left: 80px;
+}
+
+.direction-box{
+    margin-left: 350px;
+}
+
+.icons{
+    margin-left: 350px;
+}
+
+.contact-box p, .direction-box p{
+    font-weight: 700;
+    font-size: 13px;
+}
+
